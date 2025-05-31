@@ -1,20 +1,21 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
-}
+    title: "Pump Fun ",
+    description: "Start a new coin on Pump.Fun",
+    applicationName: "Pump Fun",
+    keywords: ["Pump Fun", "Start a new coin", "Solana", "Meme Coin"],
+};
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  )
+    return (
+        <html lang="en">
+            <body>{children}</body>
+        </html>
+    );
 }
